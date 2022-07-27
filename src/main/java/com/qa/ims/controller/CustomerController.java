@@ -17,6 +17,10 @@ public class CustomerController implements CrudController<Customer> {
 
 	public static final Logger LOGGER = LogManager.getLogger();
 
+
+
+
+
 	private CustomerDAO customerDAO;
 	private Utils utils;
 
@@ -66,6 +70,7 @@ public class CustomerController implements CrudController<Customer> {
 		Customer customer = customerDAO.update(new Customer(id, firstName, surname));
 		LOGGER.info("Customer Updated");
 		return customer;
+
 	}
 
 	/**
