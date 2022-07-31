@@ -4,6 +4,8 @@ This program is designed to be used as an inventory management system, which whe
 this will then return the order with total cost an items ordered.
 
 
+Jira link - https://robertkusz.atlassian.net/jira/software/projects/PROJ/boards/4/backlog
+
 ## how to install -
 To use that app as its intende, you will need to install all the dependancies  listed below.
 Project uses maven as well as sql database which has been updated to latest dependancy.
