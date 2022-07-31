@@ -2,12 +2,12 @@ package com.qa.ims.controller;
 
 import java.util.List;
 
+import com.qa.ims.utils.Utils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.qa.ims.persistence.dao.CustomerDAO;
 import com.qa.ims.persistence.domain.Customer;
-import com.qa.ims.utils.Utils;
 
 /**
  * Takes in customer details for CRUD functionality
@@ -16,6 +16,10 @@ import com.qa.ims.utils.Utils;
 public class CustomerController implements CrudController<Customer> {
 
 	public static final Logger LOGGER = LogManager.getLogger();
+
+
+
+
 
 	private CustomerDAO customerDAO;
 	private Utils utils;
@@ -66,6 +70,7 @@ public class CustomerController implements CrudController<Customer> {
 		Customer customer = customerDAO.update(new Customer(id, firstName, surname));
 		LOGGER.info("Customer Updated");
 		return customer;
+
 	}
 
 	/**
