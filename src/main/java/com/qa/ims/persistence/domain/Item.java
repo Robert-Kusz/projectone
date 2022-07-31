@@ -20,6 +20,9 @@ public class Item {
 
     }
 
+    public Item(Long id, String itemName, Class<Double> doubleClass) {
+    }
+
 
     public void setCost(double cost) {
         this.cost = cost;

@@ -2,12 +2,12 @@ package com.qa.ims.controller;
 
 import java.util.List;
 
+import com.qa.ims.utils.Utils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.qa.ims.persistence.dao.CustomerDAO;
 import com.qa.ims.persistence.domain.Customer;
-import com.qa.ims.utils.Utils;
 
 /**
  * Takes in customer details for CRUD functionality
